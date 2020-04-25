@@ -1,0 +1,13 @@
+Please make sure you have  installed all required libraries in  requirement.txt
+Go to the project folder
+Run the following commands on your shell
+
+Python manage.py makemigrations 
+Python manage.py migrate
+python manage.py runserver
+
+
+For Superuser Access
+
+python manage.py createsuperuser 
+

@@ -22,6 +22,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('vista_sms/', views.index, name="home"),
+    path('vista_sms/', include('user_auth.urls')),
 ]
 
 urlpatterns = urlpatterns + \

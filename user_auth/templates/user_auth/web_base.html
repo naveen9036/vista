@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+{%load static%}
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vista Foundation</title>
+    <meta name="description" content="Knowledge for everyone">
+    <meta name="keywords" content="vista foundation, Free Education, Sports Tournaments, knowledge for everyone, gain knowledge">
+    <link rel="stylesheet" type="text/css" href="{%static 'css/font-awesome.min.css'%}">
+    <link rel="stylesheet" type="text/css" href="{%static 'css/style.css'%}">
+	<link rel="stylesheet" type="text/css" href="{%static 'css/hero-slider-style.css'%}">
+		<link rel="stylesheet" type="text/css" href="{%static 'css/magnific-popup.css'%}">
+		<link rel="stylesheet" type="text/css" href="{%static 'css/templatemo-style.css'%}">
+    <link rel="stylesheet" type="text/css" href="{%static 'css/bootstrap.min.css'%}">
+	 <link rel="stylesheet" type="text/css" href="{%static 'css/bootstrap2.min.css'%}">
+    <link rel="icon" href="{% static 'img/logo.jpg' %}">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155271978-1"></script>
+
+    <script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-155271978-1');
+</script>
+
+<style>	
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+
+@media screen and (min-width: 601px) {
+  div.tagg {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.tagg {
+    font-size: 10px;
+  }
+}
+
+
+</style>
+
+</head>
+
+<body>
+  <!--Navigation bar-->
+<header>
+<nav id='cssmenu'>
+<span></span>
+<div class="logo"><a href="{%url 'home'%}"><img src="{% static 'img/logo.jpg' %}" width="50" class="img-fluid" alt="" style="padding-right:10px;padding-top:10px;"><span style="text-decoration: underline;">VISTA FOUNDATION</span></a>
+
+<div class="tagg" style="padding-left:60px;width:100%;margin-bottom:10px;width:100%;color:#bbb">
+
+<a href="" >Knowledge for Everyone</a>
+
+</div>
+</div>
+
+<div id="head-mobile"></div>
+<div class="menubutton"></div>
+<ul>
+<li><a href="{%url 'contact'%}">CONTACT</a></li>
+<li><a href='#'>ACTIVITIES</a>
+<ul>
+<li><a href="{%url 'event'%}">Sports</a></li>
+<li><a href="{%url 'video'%}">Academic</a></li>
+</ul>
+</li>
+<li><a href='#'>TEAM</a>
+<ul>
+<li><a href="{%url 'advisory'%}">Advisory Board</a>
+<!--<ul>
+<li><a href='#'>Sub Menu</a></li>
+</ul>-->
+</li>
+<li><a href="{%url 'volunteers'%}">Volunteers</a>
+<!--<ul>
+<li><a href='#'>Sub Menu</a></li>
+</ul>-->
+</li>
+</ul>
+<li class=''><a href="{%url 'home'%}">HOME</a></li>
+</ul>
+</nav>
+</header>
+  <!--/ Navigation bar-->
+
+  {% block content %}
+  {% endblock %}
+
+  <!-- End Contact Footer -->
+<section style="padding-bottom:0px;margin-bottom:0px;">
+<!--Footer-->
+<footer id="footer" class="footer">
+<div class="container text-center">
+<center>
+<div class="row" style="width:300px;margin-top:10px;margin-bottom:10px;">
+<div class="" style="display:flex;justify-content: space-between;">
+<a href="https://twitter.com/vistafoundatio2" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+<a href="https://www.facebook.com/VISTA-Foundation-108726667304796/?__tn__=%2Cd%2CP-R&eid=ARCHIlRY6rIoCgXOc2mtbyppjfSR6bbJx3ixaCHTWSIsT9LwC1DjcubRNupKQG0dXtdt6jVrRnQTXipN/" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+<a href="https://www.youtube.com/channel/UC_D7dSeZzbOnbia_BvVFX_w" target="_blank"><i class="fa fa-youtube-play fa-2x"></i></a>
+<a href="https://www.linkedin.com/in/vista-foundation-b82190198/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+<a href="https://www.instagram.com/vistafoundationblr/?hl=en" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+</div>
+</div>
+
+<div class="row" style="margin-bottom:10px; width:47.5%;">
+<div class="" style="display:flex;justify-content: space-between;font-size:1vw;">
+<a href="{% url 'payment_terms' %}" >Terms and conditions</a>|
+<a href="{% url 'privacy' %}" >Privacy policy</a>|
+<a href="{% url 'return_refund' %}" >Refund and cancellation</a>|
+<a href="{% url 'disclaimer' %}">Disclaimer</a>
+</div>
+</div>
+<div class="row" style="width:100%;margin-bottom:10px;width:50%;font-size:.8vw;color:#bbb">
+&copy;
+<span id="copyright">
+<script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+</span>
+VISTA Foundation, All rights reserved.
+</div>
+</center>
+</div>
+</footer>
+  <!--/ Footer-->
+</section>
+
+
+	<script src="//code.jivosite.com/widget/OJqHFCWgBC" async>
+	
+	
+	</script>
+<!--Floating Button Animation-->
+<a class="zoom-fab scale-transition scale-out" id="football_reg" href="{% url 'register' %}">
+<img src="{% static 'img/football.png' %}" width="100%;"/></a>
+<a class="zoom-fab scale-transition scale-out" id="hockey_reg" href="{% url 'register' %}">
+<img src="{% static 'img/hockey.png' %}" width="100%;"/></a>
+<a class="zoom-fab scale-transition scale-out" id="kabaddi_reg" href="{% url 'register' %}">
+<img src="{% static 'img/kabaddi.png' %}" width="100%;"/></a>
+<a href="{% url 'register' %}"><p class="register-text">Register Here</p></a>
+
+
+<!--Floating Button Animation-->
+<script type="text/javascript">
+$(document).ready(function() {
+animate();
+setInterval(animate, 3000);
+});
+function animate()
+{
+    $('#football_reg').toggleClass('scale-out');
+          setTimeout(function() {
+            $('#football_reg').toggleClass('scale-out');
+            $('#hockey_reg').toggleClass('scale-out');
+              setTimeout(function() {
+                $('#hockey_reg').toggleClass('scale-out');
+                $('#kabaddi_reg').toggleClass('scale-out');
+                  setTimeout(function() {
+                    $('#kabaddi_reg').toggleClass('scale-out');
+                  }, 1000);
+              }, 1000);
+          }, 1000);
+}
+</script>
+
+<script src="{%static 'js/jquery.easing.min.js'%}"></script>
+<script src="{%static 'js/bootstrap.min.js'%}"></script>
+<script src="{%static 'js/custom.js'%}"></script>
+<script src="{%static 'contactform/contactform.js'%}"></script>
+
+<script src="{%static 'js/jquery.min.js'%}"></script>
+<script src="{%static 'js/hero-slider-main.js'%}"></script>
+<script src="{%static 'js/jquery.magnific-popup.min.js'%}"></script>
+<script src="{%static 'js/tether.min.js'%}"></script>
+<script src="{%static 'js/jquery-1.11.3.min.js'%}"></script>
+<script src="{%static 'js/bootstrap2.min.js'%}"></script>
+
+
+<script>
+(function($) {
+$.fn.menumaker = function(options) {
+ var cssmenu = $(this), settings = $.extend({
+   format: "dropdown",
+   sticky: false
+ }, options);
+ return this.each(function() {
+   $(this).find(".menubutton").on('click', function(){
+   //$(this).toggleClass('menu-opened');
+     var mainmenu = $(this).next('ul');
+     if (mainmenu.hasClass('open')) {
+       mainmenu.slideToggle().removeClass('open');
+     }
+     else {
+       mainmenu.slideToggle().addClass('open');
+       if (settings.format === "dropdown") {
+         mainmenu.find('ul').show();
+       }
+     }
+   });
+   cssmenu.find('li ul').parent().addClass('has-sub');
+multiTg = function() {
+     cssmenu.find(".has-sub").prepend('<span class="submenu-button"></span>');
+     cssmenu.find('.submenu-button').on('click', function() {
+       $(this).toggleClass('submenu-opened');
+       if ($(this).siblings('ul').hasClass('open')) {
+         $(this).siblings('ul').removeClass('open').slideToggle();
+       }
+       else {
+         $(this).siblings('ul').addClass('open').slideToggle();
+       }
+     });
+   };
+   if (settings.format === 'multitoggle') multiTg();
+   else cssmenu.addClass('dropdown');
+   if (settings.sticky === true) cssmenu.css('position', 'fixed');
+resizeFix = function() {
+  var mediasize = 1000;
+     if ($( window ).width() > mediasize) {
+       cssmenu.find('ul').show();
+     }
+     if ($(window).width() <= mediasize) {
+       cssmenu.find('ul').hide().removeClass('open');
+     }
+   };
+   resizeFix();
+   return $(window).on('resize', resizeFix);
+ });
+  };
+})(jQuery);
+
+(function($){
+$(document).ready(function(){
+$("#cssmenu").menumaker({
+   format: "multitoggle"
+});
+});
+})(jQuery);
+</script>
+
+
+
+</body>
+</html>
